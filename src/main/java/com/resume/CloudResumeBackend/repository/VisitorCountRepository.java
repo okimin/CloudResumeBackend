@@ -6,4 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface VisitorCountRepository extends JpaRepository<VisitorCount, Long> {
+    VisitorCount findFirstByOrderByIdDesc();
 }
